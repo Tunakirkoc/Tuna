@@ -4,13 +4,13 @@
   "version": "${version}",
 
   "name": "Tuna",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "This is a test mod!",
   "authors": [
-    "Me!"
+    "Tuna Kirkoc"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://tuna.kirkoc.fr/",
+    "sources": "https://github.com/Tunakirkoc/Tuna"
   },
 
   "license": "CC0-1.0",
