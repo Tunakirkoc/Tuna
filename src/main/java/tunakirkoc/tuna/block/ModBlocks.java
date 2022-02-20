@@ -6,11 +6,11 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import tunakirkoc.tuna.Tuna;
+import tunakirkoc.tuna.item.ModItemsGroup;
 
 public class ModBlocks {
     public static final Block GRANT_BLOCK = registerBlock("grant_block",
@@ -24,7 +24,7 @@ public class ModBlocks {
 
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registry.ITEM, new Identifier(Tuna.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings().group(ItemGroup.MISC)));
+                new BlockItem(block, new FabricItemSettings().group(ModItemsGroup.GRANT)));
     }
 
     public static void registerModBlocks() {
