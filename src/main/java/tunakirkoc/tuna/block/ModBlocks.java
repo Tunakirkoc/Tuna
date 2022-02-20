@@ -13,18 +13,21 @@ import tunakirkoc.tuna.Tuna;
 import tunakirkoc.tuna.item.ModItemsGroup;
 
 public class ModBlocks {
-    public static final Block GRANT_BLOCK = registerBlock("grant_block",
-            new Block(FabricBlockSettings.of(Material.DECORATION).strength(5.0F, 5.0F).sounds(BlockSoundGroup.BONE).breakInstantly()));
 
+    public static final Block CRATE = registerBlock("crate", new Block(FabricBlockSettings
+            .of(Material.WOOD)
+            .strength(5.0F, 5.0F)
+            .sounds(BlockSoundGroup.WOOD)
+            .breakInstantly()));
 
-    private static Block registerBlock(String name, Block block){
+    private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registry.BLOCK, new Identifier(Tuna.MOD_ID, name), block);
     }
 
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registry.ITEM, new Identifier(Tuna.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings().group(ModItemsGroup.GRANT)));
+                new BlockItem(block, new FabricItemSettings().group(ModItemsGroup.TUNA)));
     }
 
     public static void registerModBlocks() {

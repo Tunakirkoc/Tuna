@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "tuna:item/grant"
+        "layer0": "tuna:item/stone_hammer"
     }
 }

@@ -1,7 +1,7 @@
 {
     "variants": {
         "": {
-            "model": "tuna:block/grant_block"
+            "model": "tuna:block/crate"
         }
     }
 }

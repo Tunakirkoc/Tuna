@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "tuna:grant_block"
+                    "name": "tuna:crate"
                 }
             ],
             "conditions": [

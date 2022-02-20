@@ -1,6 +1,5 @@
 {
-    "item.tuna.bite": "Bite",
-    "item.tuna.grant": "Grant",
-    "block.tuna.grant_block": "Grant Block",
-    "itemGroup.tuna.grant": "Tuna Mod"
+    "block.tuna.crate": "Crate",
+    "item.tuna.stone_hammer": "Stone Hammer",
+    "itemGroup.tuna.tuna": "Tuna Mod"
 }

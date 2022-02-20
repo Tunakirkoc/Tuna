@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "tuna",
-  "version": "${version}",
+  "version": "0.0.1",
 
   "name": "Tuna",
   "description": "This is a test mod!",
