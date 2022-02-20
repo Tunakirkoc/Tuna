@@ -23,6 +23,7 @@ public class Tuna implements ModInitializer {
 	// instance of the item
 	public static final Item GRANT = new Item(new Item.Settings().group(ItemGroup.MISC));
 	public static final Block GRANT_BLOCK = new Block(FabricBlockSettings.of(Material.DECORATION).strength(5.0F, 5.0F).sounds(BlockSoundGroup.BONE).breakInstantly());
+	public static final Item BITE = new Item(new Item.Settings().group(ItemGroup.FOOD).food(food.BITE));
 
 	@Override
 	public void onInitialize() {
@@ -36,5 +37,6 @@ public class Tuna implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("tuna", "grant"), GRANT);
 		Registry.register(Registry.BLOCK, new Identifier("tuna", "grant_block"), GRANT_BLOCK);
 		Registry.register(Registry.ITEM, new Identifier("tuna", "grant_block"), new BlockItem(GRANT_BLOCK, new Item.Settings().group(ItemGroup.MISC)));
+		Registry.register(Registry.ITEM, new Identifier("tuna", "bite"), BITE);
 	}
 }
